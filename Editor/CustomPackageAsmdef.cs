@@ -2,8 +2,8 @@ using System;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "CustomPackageAsdef", menuName = "Noovisphere Studio/Custom Package/New Asmdef")]
-public class CustomPackageAsdef : ScriptableObject
+[CreateAssetMenu(fileName = "CustomPackageAsmdef", menuName = "Noovisphere Studio/Custom Package/New Asmdef")]
+public class CustomPackageAsmdef : ScriptableObject
 {
     public new string name;
     public References[] references;

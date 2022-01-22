@@ -65,7 +65,7 @@ public class CustomPackageEditor : OdinMenuEditorWindow
 
         [InlineEditor(ObjectFieldMode = InlineEditorObjectFieldModes.Hidden)]
         public CustomPackage customPackage;
-        public CustomPackageAsdef customPackageAsdef;
+        public CustomPackageAsmdef customPackageAsmdef;
 
         [Button("Add new CustomPackage SO")]
         private void CreateNewCustomPackageSO()
@@ -80,13 +80,13 @@ public class CustomPackageEditor : OdinMenuEditorWindow
             File.WriteAllText(packagesPath + customPackage.name + "\\LICENSE.md", string.Empty);
             File.WriteAllText(packagesPath + customPackage.name + "\\README.md", string.Empty);
             Directory.CreateDirectory(packagesPath + customPackage.name + "\\Runtime");
-            customPackageAsdef = AssetDatabase.LoadAssetAtPath<CustomPackageAsdef>("Assets/Scripts/Editor/CustomPackageAsmdef.asset");
-            customPackageAsdef.name = customPackage.name + ".Runtime";
-            string jsonAsmdef = JsonUtility.ToJson(customPackageAsdef);
+            customPackageAsmdef = AssetDatabase.LoadAssetAtPath<CustomPackageAsmdef>("Assets/Scripts/Editor/CustomPackageAsmdef.asset");
+            customPackageAsmdef.name = customPackage.name + ".Runtime";
+            string jsonAsmdef = JsonUtility.ToJson(customPackageAsmdef);
             File.WriteAllText(packagesPath + customPackage.name + "\\Runtime\\" + customPackage.name + ".Runtime.asmdef", jsonAsmdef);
             Directory.CreateDirectory(packagesPath + customPackage.name + "\\Editor");
-            customPackageAsdef.name = customPackage.name + ".Editor";
-            jsonAsmdef = JsonUtility.ToJson(customPackageAsdef);
+            customPackageAsmdef.name = customPackage.name + ".Editor";
+            jsonAsmdef = JsonUtility.ToJson(customPackageAsmdef);
             File.WriteAllText(packagesPath + customPackage.name + "\\Editor\\" + customPackage.name + ".Editor.asmdef", jsonAsmdef);
 
             //Debug.Log(json);
