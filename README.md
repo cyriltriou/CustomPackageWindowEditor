@@ -1,16 +1,17 @@
+#Introduction
 The package provides a simple window editor to build a unity custom package. 
 Be careful!
 The package has a strong dependency on the another asset "Odin - Inspector and Serializer". You can buy it from Asset Store here: https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041
 
 Alpha version of this package. To use as a preview with no guaranty.
 
-How to install ?
+#How to install ?
 
 This package is installed in Unity Editor by selecting the git install. In package manager, click on the "+" button at up corner select in the dropdownlist Add package from git URL. 
 Copy past the following Git Url and enter: https://github.com/cyriltriou/CustomPackageWindowEditor.git
 For more information about installation of package through git URL consult the page: https://docs.unity3d.com/Manual/upm-git.html#syntax
 
-How to use ?
+#How to use ?
 
 In fact the system is quiet simple. Open the window editor in menu Tools > Custom Package. A new folder called "ScriptableObjects is created in Assets folder. When you add new custom package the profile of these assets that are Scriptable Objects instances are saved in this folder.
 
@@ -79,7 +80,7 @@ Example:
     - Email = cyril.triou@gmail.com
     - Url = https://noovisphere.com
 
-How to go further?
+#How to go further?
 Well when you package is finished you can publish it by putting it in a zip archive for a local storage or in github or a "github like" as explained at the end of the video below (7min).
 
 What is the story of this package?
@@ -87,7 +88,7 @@ What is the story of this package?
 The idea was to automate the manual process that is described on the unity manual: https://docs.unity3d.com/Manual/CustomPackages.html
 A video that shows step by step how to build a such package manually: https://www.youtube.com/watch?v=mgsLb3TKljk&t=149s
 
-Next release:
+#Next release:
 - Be able to update a package 
 - Be able to add keywords
 - Be able to add dependencies if it is possible to create a dynamic field in json
