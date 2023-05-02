@@ -34,7 +34,7 @@ The full description of the package manifest package.json is described in the fo
 The most important field is the field Name. It is required to name your custom package correctly with the right convention: <domain-name-extension>.<company-name>
 Detail of naming: https://docs.unity3d.com/Manual/cus-naming.html
 
-Of course, most of fields are not required as explained in the documentation but it makes sense describes your custom package.
+Of course, most of fields are not required as explained in the documentation but it makes sense to describe your custom package.
 
 Note: 
 - The field "Dependencies" can be udpdated from here and might be updated manually directly by opening the file package.json later.
@@ -43,7 +43,7 @@ Note:
 
 When all fields are filled in, click on the button "Add Custom Package".
 
-The result is that all the structure to welcome a new custom package has been created in the folder "Packages" according to the recommendations of the Unity documentation (see link above).
+The result is that all the structure to welcome a new custom package has been created in the folder "Packages" according to the recommendations of the Unity documentation (see link provided above).
 
 You will get a warning, somthing like:
 Assembly for Assembly Definition File 'Packages/noovispherestudio.custompackage/Runtime/noovispherestudio.custompackage.Runtime.asmdef' will not be compiled, because it has no scripts associated with it.
@@ -51,8 +51,8 @@ UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:TickCompilati
 
 It is normal! It means that you did not provide scripts into your package yet...
 
-...Now, the last action but the least, you need to copy your scripts in the folders: 
-- Runtime: put here all scripts that are not editor 
+...Now, the last action but not the least, you need to copy your scripts in the folders: 
+- Runtime: put here all scripts that are not editor scripts
 - Editor: put all Editor scripts
 
 You should also describe your package by completing the following files:
@@ -60,9 +60,9 @@ You should also describe your package by completing the following files:
 - License.md
 - Changelog
 
-It is a simple window editor and then you can also perform some others manual actions to add a folder for Documentation named "Documentation~". "~" when added at the end of a folder hiddes it in Unity Editor. Then you can places also a file Documentation.md for a more advanced documentation.
+It is a simple window editor and then you can also perform some others manual actions like adding a folder for Documentation named "Documentation~". "~" when added at the end of a folder hiddes it in Unity Editor. Then you can places also a file Documentation.md for a more advanced documentation.
 
-In the left panel of the Window Editor you can see the new custom packages listed and their content is displayed when you click the package.
+In the left panel of the Window Editor you can see the new custom packages profile listed and their content is displayed when you click the package.
 
 You can also remove one of your custom package profile by clicking the button at the up right corner called "Delete Current".
 
