@@ -88,7 +88,7 @@ Of course, most of fields are not required as explained in the documentation but
 >***Note*** 
 >- The field ***Dependencies*** can be udpdated from here and might be updated manually directly by opening the file ***package.json*** later.
 >- The field ***Keywords*** is not managed yet and can be updated also manually later.
->- The field ***Custom Package Asmdef*** is created on the fly our tool then there is nothing to do here.
+>- The field ***Custom Package Asmdef*** is created on the fly by this editor tool then there is nothing to do manually here.
 
 1. When all fields are filled in, click on the button ***Add Custom Package***.
 
@@ -116,7 +116,7 @@ It is normal! It means that you did not provide scripts into your package yet...
 
 # Manuel actions
 
-The custom window editor and then you can also perform some others manual actions like adding a folder for Documentation named **Documentation~**. For information, the tild **~** when added at the end of a folder hiddes it in Unity Editor. Then you can places also a file Documentation.md for a more advanced documentation.
+In custom window editor you can also perform some others manual actions like adding a folder for Documentation named **Documentation~**. For information, the tild **~** when added at the end of a folder hiddes it in Unity Editor. Then you can place also a file Documentation.md for a more advanced documentation.
 
 In the left panel of the Window Editor you can see the new custom packages profile listed and their content is displayed when you click the package.
 
@@ -143,16 +143,15 @@ The following example shows how you can fill in the fields of your custom packag
 
 Your custom package has been created in the folder ***Packages*** but it is not visible into the project tree. That is normal. In fact, this package must be installed somewhere else, meaning ouside the project itself. 
 
-The goal is to make it available from package manager usally for others projects. It might be also a way to split your current project to isolate a part of the code as an asset and reimport it through a package. 
+The goal is to make it available from package manager for others unity projects. It might be also a suitable way to split your current project to isolate a part of the code as an asset and reimport it through a package.
 
-It also means that the lifecycle of this package will leave in another unity project as it is not possible to change the packages installed in the folder ***Packages*** because it is ummutable (consult the links below ***Understand the full picture***).
+It also means that the lifecycle of this package will leave in another unity project as it is not possible to change the packages installed in the folder ***Packages*** because it is ***ummutable*** (consult the links below to ***Understand the full picture***).
 
 So, the place where you make your package available is called ***a registry***:
 - Read [Sharing your package](https://docs.unity3d.com/Manual/cus-share.html) to see the different possibilities.
 
-
-
 # How to go further?
+
 When your package is finished you need to make it available. Then you can publish it by putting it into a ***zip archive*** for a ***local storage*** or ***into github*** or a "***github like***" as **e**xplained at the end of the video below (7min) or in your owned unity registry as mentioned above (see how to create a npm registry for unity on Google).
 
 # The story of this package
