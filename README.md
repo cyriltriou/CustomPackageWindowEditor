@@ -181,3 +181,4 @@ In the next release, some improvments might be proposed like to following ones:
 - Be able to add keywords
 - Be able to add dependencies if it is possible to create a dynamic field in json
 - Be able to delete the package in packages not only the SO.
+- BE able to add [Samples structure](https://docs.unity3d.com/Manual/cus-samples.html) as described into the unity documentation.
