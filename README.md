@@ -29,7 +29,7 @@ This package is installed in Unity Editor by selecting the git install in packag
 1. Open package manager 
 2. Click on the **+** button at up corner select in the dropdownlist Add package from git URL:
 
-![Add package from git URL](./Doc/Add%20package%20from%20git%20URL.png). 
+![Add package from git URL](./Doc/Add%20package%20from%20git%20URL.png) 
 
 3. Copy past the following Git Url and enter: 
    https://github.com/cyriltriou/CustomPackageWindowEditor.git
