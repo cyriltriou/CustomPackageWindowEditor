@@ -1,5 +1,7 @@
-# Overview
+> *** Note: ***
+> This package is useful in Unity 3D Engine context!
 
+# Overview
 - [Overview](#overview)
 - [Introduction](#introduction)
 - [How to install ?](#how-to-install-)
@@ -15,12 +17,12 @@
 
 The package ***Custom Package Window Editor*** provides a simple window editor that generates a unity custom package. The generated package is equivalent to packages that you can find into Package Manager and when hosted can be accessible anywhere.
 
-> ***Note***
+> ***Note:***
 > The package has a strong dependency on the another asset **"Odin - Inspector and Serializer"**.
 > You can buy this awesome asset from Asset Store: 
 > - <https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041>
 
-> ***About current Version***
+> ***About current Version:***
 > This is an ***alpha version*** of this package, you can freely use it! But, it might be not free of bugs.
 
 # How to install ?
@@ -29,15 +31,15 @@ This package is installed in Unity Editor by selecting the git install in packag
 1. Open package manager 
 2. Click on the **+** button at up corner select in the dropdownlist Add package from git URL:
 
-![Add package from git URL](./Doc/Add%20package%20from%20git%20URL.png). 
+![Add package from git URL](./Doc/Add%20package%20from%20git%20URL.png) 
 
 3. Copy past the following Git Url and enter: 
    https://github.com/cyriltriou/CustomPackageWindowEditor.git
 
 ![Copy URL](./Doc/Copy%20git%20URL.png)
 
-> ***Note***
->For more information about installation of package through git >URL consult the page: ***[https://docs.unity3d.com/Manual/upm-git.html#syntax](https://docs.unity3d.com/Manual/upm-git.html#syntax)***
+> ***Note:***
+> For more information about installation of package through git >URL consult the page: ***[https://docs.unity3d.com/Manual/upm-git.html#syntax](https://docs.unity3d.com/Manual/upm-git.html#syntax)***
 
 # How to use ?
 
@@ -47,7 +49,7 @@ Actually, this custom package is straighforward thanks to the new editor window 
    
 ![Screenshot](./Doc/Custom%20Package%20Editor%20Windows.png)
 
->***Note***
+>***Note:***
 >A new folder called ***ScriptableObjects*** is created in ***Assets folder***. When you add a new custom package the profile of these assets that are purely ***Scriptable Objects instances*** are saved in this folder.
 
 2. When the Window Editor is displayed, you click the button ***"Create New"*** and you fill in the following fields:
@@ -83,10 +85,10 @@ The detail of naming convention is described in the following link:
 
 Of course, most of fields are not required as explained in the documentation but it makes sense to describe your custom package as good as possible.
 
->***Note*** 
+>***Note:*** 
 >- The field ***Dependencies*** can be udpdated from here and might be updated manually directly by opening the file ***package.json*** later.
 >- The field ***Keywords*** is not managed yet and can be updated also manually later.
->- The field ***Custom Package Asmdef*** is created on the fly our tool then there is nothing to do here.
+>- The field ***Custom Package Asmdef*** is created on the fly by this editor tool then there is nothing to do manually here.
 
 1. When all fields are filled in, click on the button ***Add Custom Package***.
 
@@ -106,7 +108,7 @@ It is normal! It means that you did not provide scripts into your package yet...
 - ***Runtime***: put here all scripts that are not editor scripts
 - ***Editor***: put all Editor scripts
 
->***Note***
+>***Note:***
 >You should also describe your package by completing the following files:
 >- ***Readme.md***: describe your package to help user to understand its usage. You can use [markdown](https://www.markdownguide.org/basic-syntax/) to beautify the reading.
 >- ***License.md***: describe the license information that comes with usage of your package like MIT, Apache, GNU, etc... 
@@ -114,7 +116,7 @@ It is normal! It means that you did not provide scripts into your package yet...
 
 # Manuel actions
 
-The custom window editor and then you can also perform some others manual actions like adding a folder for Documentation named **Documentation~**. For information, the tild **~** when added at the end of a folder hiddes it in Unity Editor. Then you can places also a file Documentation.md for a more advanced documentation.
+In custom window editor you can also perform some others manual actions like adding a folder for Documentation named **Documentation~**. For information, the tild **~** when added at the end of a folder hiddes it in Unity Editor. Then you can place also a file Documentation.md for a more advanced documentation.
 
 In the left panel of the Window Editor you can see the new custom packages profile listed and their content is displayed when you click the package.
 
@@ -141,16 +143,15 @@ The following example shows how you can fill in the fields of your custom packag
 
 Your custom package has been created in the folder ***Packages*** but it is not visible into the project tree. That is normal. In fact, this package must be installed somewhere else, meaning ouside the project itself. 
 
-The goal is to make it available from package manager usally for others projects. It might be also a way to split your current project to isolate a part of the code as an asset and reimport it through a package. 
+The goal is to make it available from package manager for others unity projects. It might be also a suitable way to split your current project to isolate a part of the code as an asset and reimport it through a package.
 
-It also means that the lifecycle of this package will leave in another unity project as it is not possible to change the packages installed in the folder ***Packages*** because it is ummutable (consult the links below ***Understand the full picture***).
+It also means that the lifecycle of this package will leave in another unity project as it is not possible to change the packages installed in the folder ***Packages*** because it is ***ummutable*** (consult the links below to ***Understand the full picture***).
 
 So, the place where you make your package available is called ***a registry***:
 - Read [Sharing your package](https://docs.unity3d.com/Manual/cus-share.html) to see the different possibilities.
 
-
-
 # How to go further?
+
 When your package is finished you need to make it available. Then you can publish it by putting it into a ***zip archive*** for a ***local storage*** or ***into github*** or a "***github like***" as **e**xplained at the end of the video below (7min) or in your owned unity registry as mentioned above (see how to create a npm registry for unity on Google).
 
 # The story of this package
@@ -180,3 +181,4 @@ In the next release, some improvments might be proposed like to following ones:
 - Be able to add keywords
 - Be able to add dependencies if it is possible to create a dynamic field in json
 - Be able to delete the package in packages not only the SO.
+- BE able to add [Samples structure](https://docs.unity3d.com/Manual/cus-samples.html) as described into the unity documentation.

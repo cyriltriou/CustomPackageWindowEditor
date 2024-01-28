@@ -88,6 +88,7 @@ namespace NoovisphereStudio {
                 DirectoryInfo directoryInfo = new DirectoryInfo(Application.dataPath);
                 string parent = directoryInfo.Parent.ToString();
                 string packagesPath = parent + "\\Packages\\";
+                //string packagesPath = parent + "\\Assets\\";
                 Directory.CreateDirectory(packagesPath + customPackage.name);
                 string json = JsonUtility.ToJson(customPackage);
                 File.WriteAllText(packagesPath + customPackage.name + "\\package.json", json);
