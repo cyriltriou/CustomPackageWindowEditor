@@ -1,4 +1,4 @@
-> *** Note ***
+> *** Note: ***
 > This package is useful in Unity 3D Engine context!
 
 # Overview
@@ -17,12 +17,12 @@
 
 The package ***Custom Package Window Editor*** provides a simple window editor that generates a unity custom package. The generated package is equivalent to packages that you can find into Package Manager and when hosted can be accessible anywhere.
 
-> ***Note***
+> ***Note:***
 > The package has a strong dependency on the another asset **"Odin - Inspector and Serializer"**.
 > You can buy this awesome asset from Asset Store: 
 > - <https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041>
 
-> ***About current Version***
+> ***About current Version:***
 > This is an ***alpha version*** of this package, you can freely use it! But, it might be not free of bugs.
 
 # How to install ?
@@ -38,8 +38,8 @@ This package is installed in Unity Editor by selecting the git install in packag
 
 ![Copy URL](./Doc/Copy%20git%20URL.png)
 
-> ***Note***
->For more information about installation of package through git >URL consult the page: ***[https://docs.unity3d.com/Manual/upm-git.html#syntax](https://docs.unity3d.com/Manual/upm-git.html#syntax)***
+> ***Note:***
+> For more information about installation of package through git >URL consult the page: ***[https://docs.unity3d.com/Manual/upm-git.html#syntax](https://docs.unity3d.com/Manual/upm-git.html#syntax)***
 
 # How to use ?
 
@@ -49,7 +49,7 @@ Actually, this custom package is straighforward thanks to the new editor window 
    
 ![Screenshot](./Doc/Custom%20Package%20Editor%20Windows.png)
 
->***Note***
+>***Note:***
 >A new folder called ***ScriptableObjects*** is created in ***Assets folder***. When you add a new custom package the profile of these assets that are purely ***Scriptable Objects instances*** are saved in this folder.
 
 2. When the Window Editor is displayed, you click the button ***"Create New"*** and you fill in the following fields:
@@ -85,7 +85,7 @@ The detail of naming convention is described in the following link:
 
 Of course, most of fields are not required as explained in the documentation but it makes sense to describe your custom package as good as possible.
 
->***Note*** 
+>***Note:*** 
 >- The field ***Dependencies*** can be udpdated from here and might be updated manually directly by opening the file ***package.json*** later.
 >- The field ***Keywords*** is not managed yet and can be updated also manually later.
 >- The field ***Custom Package Asmdef*** is created on the fly by this editor tool then there is nothing to do manually here.
@@ -108,7 +108,7 @@ It is normal! It means that you did not provide scripts into your package yet...
 - ***Runtime***: put here all scripts that are not editor scripts
 - ***Editor***: put all Editor scripts
 
->***Note***
+>***Note:***
 >You should also describe your package by completing the following files:
 >- ***Readme.md***: describe your package to help user to understand its usage. You can use [markdown](https://www.markdownguide.org/basic-syntax/) to beautify the reading.
 >- ***License.md***: describe the license information that comes with usage of your package like MIT, Apache, GNU, etc... 
